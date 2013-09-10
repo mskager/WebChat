@@ -1,0 +1,54 @@
+h2 {
+	font-family:arial;
+}
+
+input{
+	width: 700px;
+}
+
+form {
+	display: inline-block;
+}
+
+#chat_conversation {
+	border:1px solid black;
+	white-space: pre;
+	overflow-y: auto;
+	overflow-x: none;
+	width: 700px;
+	height: 550px;
+	}
+
+
+	   
+.shadow {
+	box-shadow: 2px 2px 4px 1px #000000;
+	padding-top: 10px;
+	padding-right: 1px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+		     }
+
+#sendbutton{
+	display: inline-block;
+	height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+      	text-align:center;
+     	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	width:100px;
+	height:300px;
+	float:right;
+/*	position:fixed; */
+	right:20px;
+	border-right:1px solid black;
+	overflow:scroll-y;
+}

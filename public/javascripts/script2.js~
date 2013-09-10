@@ -1,0 +1,16 @@
+$(document).ready(function() {
+	var socket = io.connect('http://localhost:1337');
+	socket.on('connect', function() {
+		var username = getParameterByName('User');
+		socket.emit('adduser', username);
+	});
+	
+	function getParameterByName(name) {
+    	name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+   	var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    	return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	}
+});
+
+

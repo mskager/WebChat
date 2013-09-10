@@ -1,0 +1,59 @@
+!!! 5
+html
+  head
+    <meta charset="utf-8" /> 
+    title Chat with idiots
+    link(rel='stylesheet', type='text/css', href='stylesheets/style.css')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js').
+    script(src='/socket.io/socket.io.js').
+    script(type='text/javascript', src='javascripts/script2.js').
+    // Le styles
+    link(href='stylesheets/bootstrap.css', rel='stylesheet').
+    style(type='text/css').
+      body {
+      padding-top: 40px;.
+      padding-bottom: 40px;
+      background-color: #f5f5f5;
+      }
+      #chat_conversation {
+      max-width: 700px;
+      max-height: 550px;
+      padding: 19px 29px 29px;
+      margin: 0 auto 20px;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      }
+      #msginput{
+      max-width: 600px;
+      margin: 0 auto 20px;
+      background-color: #fff;
+      background-color: #fff;
+      border: 1px solid #e5e5e5;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+      margin-bottom: 10px;
+      }
+      .form-signin .form-signin-heading,
+      .form-signin .checkbox {
+      margin-bottom: 10px;
+      }
+      .wraper{
+       padding: 19px 29px 29px;
+      }
+  body
+    .list
+      b USERS
+       #users
+    .wraper
+      #chat_conversation
+      input#msginput(type='text')
+      input#sendbutton(type='button', value='send')
